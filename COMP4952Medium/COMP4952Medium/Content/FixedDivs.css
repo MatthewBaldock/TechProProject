@@ -1,34 +1,115 @@
 ﻿.maincontainer {
-    width: 490px;
+    width: 900px;
     overflow: auto;
     padding: 1em;
-    background: #000;
+    background: #000A0A;
     margin: auto;
+}
+
+body {
+    background: url("/images/background_image.jpg") no-repeat;
+    background-size: 100% 800px;
+    background-color: #cccccc;
 }
 
 #objectList {
     float: left;
-    background: #ff6a00;
+    background: #132930;
     text-align: center;
-    line-height: 300px;
-    width: 150px; height: 300px;
+    line-height: 100%;
+    width: 24%; height: 580px;
+    border: 1px solid #009DA9;
 }
 
 #graphAndSettings {
-    float:left;
+    float: right;
+    width: 76%;
 }
 
 #graph {
-    background: #6fcef2;
-    text-align: center;
-    line-height: 250px;
-    width: 300px; height: 250px;
+    background: #132930;
+    border: 3px solid #009DA9;
 }
 
 #settings {
     background: #808080;
     text-align: center;
-    line-height: 50px;
-    width: 300px; height: 50px;
+    height: 44px;
+    border: 1px solid #009DA9;
 }
 
+.faction-tab {
+    width: 48px;
+    height: 43px;
+}
+#tr-tab {
+    margin-left: 3px;
+}
+.overwrite-tabs-css {
+    width: 48px;
+    height: 43px;
+    margin-left: -16px;
+    margin-top: -11px;
+}
+
+.center-object {
+    width: 100px;
+    margin: auto;
+}
+
+.overwrite-navbar {
+    background-image: url("/images/page-cap.png");
+    background-repeat: no-repeat;
+    background-size: 1900px 20px;
+    background-position-x: center;
+}
+
+#footer {
+    margin-top: 0px;
+    text-align:center;
+    height: 50px;
+    background-image: url("/images/Mainpage_footer.png");
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    background-position-x: 25px;
+    background-position-y: -60px;
+    color:white;
+}
+
+.object-img-size {
+    width: 90px;
+    height: 80px;
+}
+
+.upArrow {
+    padding-top: 2px;
+}
+
+.imgWrap {
+    position: relative;
+    height: 200px;
+    width: 257px;
+}
+
+.imgDescription {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+
+
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transition: visibility opacity 0.2s;
+          
+}
+
+
+.imgWrap:hover .imgDescription {
+    visibility: visible;
+    opacity: 1;
+}

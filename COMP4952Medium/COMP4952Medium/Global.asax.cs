@@ -6,6 +6,9 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using COMP4952Medium;
+using System.Data.Entity;
+using COMP4952Medium.Models;
 
 namespace COMP4952Medium
 {
@@ -16,6 +19,7 @@ namespace COMP4952Medium
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Database.SetInitializer(new ItemDatabaseInitializer());
         }
     }
 }
