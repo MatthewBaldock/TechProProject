@@ -98,7 +98,7 @@
             </div>
             <div id="settings">
                 <p><input type="checkbox" onload="refresh()"onclick="refresh()" id="bestshot">Best shot 
-                    <asp:TextBox ID="range" onChange="test()" runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="rangeLabel" runat="server" Text="Label">Range</asp:Label>
+                    <asp:TextBox ID="range" runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="rangeLabel" runat="server" Text="Label">Range</asp:Label>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="range" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
                     <asp:TextBox ID="Height"  runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="heightLabel" runat="server" Text="Label">Height</asp:Label>
                      <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Height" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
@@ -189,4 +189,7 @@
         }
     </script>
     <script type="text/javascript" src="Scripts/SiteScript.js"></script>
+    <script>
+        test(document.getElementById('<%=range.ClientID%>').value);
+    </script>
 </asp:Content>

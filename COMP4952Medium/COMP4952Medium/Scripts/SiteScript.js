@@ -5,6 +5,7 @@
 		var ctx2 = c.getContext("2d");
 		var ctx3 = c.getContext("2d");
 		var velocity = 0;
+		var rangeValue = 10;
  $(function drawline() { 
     $( "#draggable" ).draggable({ containment: "#containment-wrapper", scroll: true });
            });
@@ -32,6 +33,12 @@
 		    document.getElementById("photo").src = "images/crosshair.png";
 		}
 	}
+
+	function test(value) {
+	    var x = value;
+	    document.getElementById("divx").innerHTML = x;
+	}
+
 	function refresh()
 	{
 		mydraw();
@@ -111,9 +118,6 @@
 		  ctx3.lineTo(c.width,c.height);
 		  ctx3.fillText(c.width*25,c.width-5,c.height - 10);
 		  ctx3.stroke();
-		  
-		  var x = document.getElementById('<%range.ClientID%>').innerHTML;
-		  document.getElementById("divx").innerHTML = x;
 		  
    }
 	function best_time()

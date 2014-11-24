@@ -26,7 +26,6 @@ namespace COMP4952Medium.AdminPage
                 rptrUsers.Visible = false;
                 return;
             }
-
             rptrUsers.DataSource = manager.Users.ToList();
             rptrUsers.DataBind();
         }
