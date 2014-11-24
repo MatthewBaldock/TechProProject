@@ -44,10 +44,7 @@
           visibility: visible;
           opacity: 1;
         }
-    </style>                   
-    <p>
-        <asp:LoginName runat="server" FormatString="{0}"/>
-    </p>         
+    </style>     
     <div class="maincontainer">
         <div id="objectList">
             <div class="bs-example bs-example-tabs">
@@ -87,60 +84,8 @@
                         </ItemTemplate>
                     </asp:ListView>
                 </div>
-                <!--
-                    <div role="tabpanel" class="tab-pane fade in active" id="nc" aria-labelledBy="nc-tab">
-                        <a href="#" onclick="ncPrev()"><img class="upArrow" src="/images/grey-up.png" onmouseover="blueUpArrow(this)" onmouseout="greyUpArrow(this)"/></a>
-                        <div id="carousel3" style="margin: auto;">
-                            <div class="object-img-size"></div>
-                            <div class="object-img-size"></div>
-                            <asp:ListView ID="ListView1" runat="server" 
-                                DataKeyNames="ItemID" GroupItemCount="1"
-                                ItemType="COMP4952Medium.Models.Item" SelectMethod="GetItemNC">
-                                <ItemTemplate>
-                                    <div class="object-img-size imgWrap"><img src="/images/<%#:Item.ItemImage %>" alt="<%#:Item.ItemName %>" /><p class="imgDescription"><%#:Item.ItemName %></p></div>
-                                </ItemTemplate>
-                            </asp:ListView>
-                            <div class="object-img-size"></div>
-                            <div class="object-img-size"></div>
-                        </div>
-                        <a href="#" onclick="ncNext()"><img src="/images/grey-down.png" onmouseover="blueDownArrow(this)" onmouseout="greyDownArrow(this)"/></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="tr" aria-labelledBy="tr-tab">
-                        <a href="#" onclick="trPrev()"><img class="upArrow" src="/images/grey-up.png" onmouseover="blueUpArrow(this)" onmouseout="greyUpArrow(this)"/></a>
-                        <div id="carousel" style="margin: auto;">
-                            <div class="object-img-size"></div>
-                            <div class="object-img-size"></div>
-                            <asp:ListView ID="itemList" runat="server" 
-                                DataKeyNames="ItemID" GroupItemCount="1"
-                                ItemType="COMP4952Medium.Models.Item" SelectMethod="GetItemTR">
-                                <ItemTemplate>
-                                    <div class="object-img-size imgWrap"><img src="/images/<%#:Item.ItemImage %>" alt="<%#:Item.ItemName %>" /><p class="imgDescription"><%#:Item.ItemName %></p></div>
-                                </ItemTemplate>
-                            </asp:ListView>
-                            <div class="object-img-size"></div>
-                            <div class="object-img-size"></div>
-                        </div>
-                        <a href="#" onclick="trNext()"><img src="/images/grey-down.png" onmouseover="blueDownArrow(this)" onmouseout="greyDownArrow(this)"/></a>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="vs" aria-labelledBy="vs">
-                        <a class="upArrow" href="#" onclick="vsPrev()"><img class="upArrow" src="/images/grey-up.png" onmouseover="blueUpArrow(this)" onmouseout="greyUpArrow(this)"/></a>
-                        <div id="carousel2" style="margin: auto;">
-                            <div class="object-img-size"></div>
-                            <div class="object-img-size"></div>
-                                <asp:ListView ID="ListView2" runat="server" 
-                                    DataKeyNames="ItemID" GroupItemCount="1"
-                                    ItemType="COMP4952Medium.Models.Item" SelectMethod="GetItemVS">
-                                    <ItemTemplate>
-                                        <div class="object-img-size imgWrap"><img src="/images/<%#:Item.ItemImage %>" alt="<%#:Item.ItemName %>" /><p class="imgDescription"><%#:Item.ItemName %></p></div>
-                                    </ItemTemplate>
-                                </asp:ListView>
-                            <div class="object-img-size"></div>
-                            <div class="object-img-size"></div>
-                        </div>
-                        <a href="#" onclick="vsNext()"><img src="/images/grey-down.png" onmouseover="blueDownArrow(this)" onmouseout="greyDownArrow(this)"/></a>
-                    </div> -->
-                 </div><!-- End of Tab Content -->
-            </div><!-- /example -->
+            </div><!-- End of Tab Content -->
+        </div><!-- /example -->
         <div id="graphAndSettings">
             <div id="graph">
                 <div id="containment-wrapper">

@@ -15,6 +15,7 @@ namespace COMP4952Medium
         private bool loadOnce = true;
         protected void Page_Load(object sender, EventArgs e)
         {
+
         }
 
         public string GetActive() 
@@ -40,46 +41,6 @@ namespace COMP4952Medium
             IQueryable<Item> query = _db.Items;
 
             query = query.Where(p => p.CategoryID == itemID);
-
-            return query;
-        }
-
-        public IQueryable<Item> GetItemTR()
-        {
-            var _db = new COMP4952Medium.Models.ItemContext();
-            IQueryable<Item> query = _db.Items;
-            
-            query = query.Where(p => p.CategoryID == 1);
-            
-            return query;
-        }
-
-        public IQueryable<Item> GetItemNC()
-        {
-            var _db = new COMP4952Medium.Models.ItemContext();
-            IQueryable<Item> query = _db.Items;
-
-            query = query.Where(p => p.CategoryID == 2);
-
-            return query;
-        }
-
-        public IQueryable<Item> GetItemVS()
-        {
-            var _db = new COMP4952Medium.Models.ItemContext();
-            IQueryable<Item> query = _db.Items;
-
-            query = query.Where(p => p.CategoryID == 3);
-
-            return query;
-        }
-
-        public IQueryable<Item> GetItemNS()
-        {
-            var _db = new COMP4952Medium.Models.ItemContext();
-            IQueryable<Item> query = _db.Items;
-
-            query = query.Where(p => p.CategoryID == 4);
 
             return query;
         }
