@@ -12,7 +12,7 @@
             <br /><a href="http://www.w3schools.com/tags/canvas_lineto.asp">http://www.w3schools.com/tags/canvas_lineto.asp</a>
             <br /><a href="http://www.worldwidewhat.net/2011/06/draw-a-line-graph-using-html5-canvas/">http://www.worldwidewhat.net/2011/06/draw-a-line-graph-using-html5-canvas/</a>
             <br />Movable Div <a href="http://jqueryui.com/draggable/">http://jqueryui.com/draggable/</a>
-            <br />Images <a href="http://planetside.wikia.com/wiki/PlanetSide_2_Wiki">http://planetside.wikia.com/wiki/PlanetSide_2_Wiki</a>
+            <br />All Images <a href="http://planetside.wikia.com/wiki/PlanetSide_2_Wiki">http://planetside.wikia.com/wiki/PlanetSide_2_Wiki</a>
             <br /><a href="https://www.planetside2.com/home">https://www.planetside2.com/home</a>
         </p>
 

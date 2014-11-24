@@ -11,18 +11,13 @@ namespace COMP4952Medium.Models
         [ScaffoldColumn(false)]
 
         [Key]
-        public int UserID { get; set; }
-        public string ItemName { get; set; }
+        public string UserID { get; set; }
 
-        public int? ItemVelocity { get; set; }
+        public string ItemVelocity { get; set; }
 
-        public int? CategoryID { get; set; }
+        public string Range { get; set; }
 
-        public int? Angle { get; set; }
-
-        public int? Range { get; set; }
-
-        public int? Height { get; set; }
+        public string Height { get; set; }
 
     }
 }

@@ -45,10 +45,7 @@
           visibility: visible;
           opacity: 1;
         }
-    </style>                   
-    <p>
-        <asp:LoginName runat="server" FormatString="{0}"/>
-    </p>         
+    </style>     
     <div class="maincontainer" onload="mydraw()">
         <div id="objectList">
             <div class="bs-example bs-example-tabs">
@@ -88,30 +85,30 @@
                         </ItemTemplate>
                     </asp:ListView>
                 </div>
-               </div><!-- End of Tab Content -->
-            </div><!-- /example -->
-        <div id="graphAndSettings" >
-            <div id="graph" >
+            </div><!-- End of Tab Content -->
+        </div><!-- /example -->
+        <div id="graphAndSettings">
+            <div id="graph">
                 <div id="containment-wrapper">
                     <canvas id="lineCanvas" height="500" width="650"></canvas>
-                    <div style="background-color: #132930;"id="draggable" ondrag="mydraw()"class="draggable ui-widget-content">
+                    <div style="background-color: #132930;" id="draggable" ondrag="mydraw()"class="draggable ui-widget-content">
                         <img id="photo"src="images/crosshair.png" height="30" width="30" />
                     </div>
                 </div>
             </div>
             <div id="settings">
                 <p><input type="checkbox" onload="refresh()"onclick="refresh()" id="bestshot">Best shot 
-                    <asp:TextBox ID="range" OnTextChanged="set_range" runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="rangeLabel" runat="server" Text="Label">Range</asp:Label>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Range" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
-                    <asp:TextBox ID="Height"  runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="heightLabel" runat="server" Text="Label">Height</asp:Label>
+                    <asp:TextBox ID="range" runat="server" Width="50" ></asp:TextBox><asp:Label ID="rangeLabel" runat="server" Text="Label">Range</asp:Label>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="range" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
+                    <asp:TextBox ID="Height"  runat="server" Width="50" ></asp:TextBox><asp:Label ID="heightLabel" runat="server" Text="Label">Height</asp:Label>
                      <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Height" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
-                    <asp:TextBox ID="Angle" runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="angleLabel" runat="server" Text="Label">Angle</asp:Label>
-                     <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="Angle" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
-                   <input style="float:right;" type="button" value="Save Data"/>
-                    <input style="float:right;" type="button" value="Calculate"/> 
-                    
+                    Velocity<asp:TextBox ID="Velocity1" runat="server"> <p id="Velocity" ></p></asp:TextBox>
+                    <br />
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="range" ErrorMessage="Range between 0 and 16250" ForeColor="Red" MaximumValue="16250" MinimumValue="0" Type="Integer"></asp:RangeValidator>
+                     <asp:RangeValidator  ID="RangeValidator2" runat="server" ControlToValidate="Height" ErrorMessage="Height between 0 and 12500" ForeColor="Red" MaximumValue="12500" MinimumValue="0" Type="Integer"></asp:RangeValidator>
+                    <input id="Save"style="float:right;"  type="button" value="Save Data" OnClick="Save_Click" />
+                    <input style="float:right;" onclick="calculate()" type="button" value="Calculate"/> 
                 </p>
-                <div>X:<p id="divx"></p></div>
             </div>
         </div>
     </div>
@@ -192,6 +189,11 @@
         }  
     </script>
        <script type="text/javascript" src="Scripts/SiteScript.js">
-           var rangeID = document.getElementById("Range").value;  
        </script>
+      <script>
+          set_calculation(document.getElementById('<%=range.ClientID%>'), document.getElementById('<%=Height.ClientID%>'));
+          function calculate() {
+              set_calculation(document.getElementById('<%=range.ClientID%>'), document.getElementById('<%=Height.ClientID%>'));
+          }
+      </script>
 </asp:Content>

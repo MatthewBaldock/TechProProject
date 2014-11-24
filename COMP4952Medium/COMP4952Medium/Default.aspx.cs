@@ -7,6 +7,9 @@ using System.Web.UI.WebControls;
 using COMP4952Medium.Models;
 using System.Web.ModelBinding;
 using System.Web.Security;
+using Microsoft.AspNet.Identity;
+
+
 
 namespace COMP4952Medium
 {
@@ -15,6 +18,7 @@ namespace COMP4952Medium
         private bool loadOnce = true;
         protected void Page_Load(object sender, EventArgs e)
         {
+
         }
 
         public string GetActive() 
@@ -43,6 +47,7 @@ namespace COMP4952Medium
 
             return query;
         }
+
 
         public IQueryable<Item> GetItemTR()
         {
@@ -84,11 +89,19 @@ namespace COMP4952Medium
             return query;
         }
 
-        protected void set_range(object sender, EventArgs e)
-        {
-           string.Format("set_rangeID('{0}')", range.ClientID);
-        }
+       public void Save_Click(object sener, EventArgs e)
+       {
+          Graph newGraph = new Graph()
+          {
+              UserID = User.Identity.GetUserId(),
+              ItemVelocity = Velocity1.Text,
+              Range = range.Text,
+              Height = Height.Text
+             
+          };
+           
+       }
 
-       
+     
     }
 }

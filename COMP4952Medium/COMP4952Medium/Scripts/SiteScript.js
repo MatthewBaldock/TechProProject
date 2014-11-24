@@ -1,14 +1,11 @@
-		var height;
+		var dragging;
 	    var canvas;
         var c = document.getElementById("lineCanvas");
 		var ctx = c.getContext("2d");
 		var ctx2 = c.getContext("2d");
 		var ctx3 = c.getContext("2d");
-		var rangeID;
-		function set_rangeID(ID)
-		{
-		    rangeID = ID;
-		}
+		var rangeValue;
+		var heightValue;
 		var velocity = 0;
  $(function drawline() { 
     $( "#draggable" ).draggable({ containment: "#containment-wrapper", scroll: true });
@@ -43,7 +40,7 @@
 	}
    function mydraw()
           {
-           height =  $("#draggable").position();
+          dragging =  $("#draggable").position();
 			canvas = $("#lineCanvas").position();
 			var time = duration();
           ctx.clearRect(0,0,c.width,c.height);
@@ -116,10 +113,27 @@
 		  ctx3.lineTo(c.width,c.height);
 		  ctx3.fillText(c.width*25,c.width-5,c.height - 10);
 		  ctx3.stroke();
+		  document.getElementById("Velocity").value = velocity*5;
+		
+		  rangeValue.value = get_x()*25;
+		  heightValue.value = get_y()*25 +175 ;
+          
+   }
 		  
-		  var x = document.getElementById(rangeID).value;
-		  document.getElementById("divx").innerHTML = x;
-		  
+  
+   function set_calculation(range, height) {
+       rangeValue = range;
+       heightValue = height;
+       if (range.value <= 16250)
+       {
+           x = (range.value / 25) - 15;
+       }
+       if (height.value <= 12500) {
+           y = (height.value / -25) - 15;
+       }
+       document.getElementById("draggable").style.left = x+'px';
+       document.getElementById("draggable").style.top = y+'px';
+       refresh();
    }
 	function best_time()
 	{
@@ -155,11 +169,11 @@
 	}
 	function get_x()
 	{
-		return height.left - canvas.left + 15;
+		return dragging.left - canvas.left + 15;
 	}
 	function get_y()
 	{
-		return (height.top - canvas.top - c.height + 15) * -1 ;
+		return (dragging.top + 15 - canvas.top - c.height ) * -1 ;
 		
 	}
 	function get_angle()
