@@ -4,6 +4,11 @@
 		var ctx = c.getContext("2d");
 		var ctx2 = c.getContext("2d");
 		var ctx3 = c.getContext("2d");
+		var rangeID;
+		function set_rangeID(ID)
+		{
+		    rangeID = ID;
+		}
 		var velocity = 0;
  $(function drawline() { 
     $( "#draggable" ).draggable({ containment: "#containment-wrapper", scroll: true });
@@ -112,7 +117,7 @@
 		  ctx3.fillText(c.width*25,c.width-5,c.height - 10);
 		  ctx3.stroke();
 		  
-		  var x = document.getElementById('<%range.ClientID%>').innerHTML;
+		  var x = document.getElementById(rangeID).value;
 		  document.getElementById("divx").innerHTML = x;
 		  
    }

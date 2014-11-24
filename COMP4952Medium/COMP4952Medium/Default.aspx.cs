@@ -84,6 +84,11 @@ namespace COMP4952Medium
             return query;
         }
 
+        protected void set_range(object sender, EventArgs e)
+        {
+           string.Format("set_rangeID('{0}')", range.ClientID);
+        }
+
        
     }
 }

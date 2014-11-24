@@ -101,8 +101,8 @@
             </div>
             <div id="settings">
                 <p><input type="checkbox" onload="refresh()"onclick="refresh()" id="bestshot">Best shot 
-                    <asp:TextBox ID="range"  runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="rangeLabel" runat="server" Text="Label">Range</asp:Label>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="range" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
+                    <asp:TextBox ID="range" OnTextChanged="set_range" runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="rangeLabel" runat="server" Text="Label">Range</asp:Label>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Range" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
                     <asp:TextBox ID="Height"  runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="heightLabel" runat="server" Text="Label">Height</asp:Label>
                      <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Height" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
                     <asp:TextBox ID="Angle" runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="angleLabel" runat="server" Text="Label">Angle</asp:Label>
@@ -189,7 +189,9 @@
         }
         function blueDownArrow(img) {
             img.src = '/images/blue-down.png';
-        }
+        }  
     </script>
-       <script type="text/javascript" src="Scripts/SiteScript.js"></script>
+       <script type="text/javascript" src="Scripts/SiteScript.js">
+           var rangeID = document.getElementById("Range").value;  
+       </script>
 </asp:Content>
