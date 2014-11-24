@@ -12,5 +12,7 @@ namespace COMP4952Medium.Models
             : base("COMP4952Medium") { }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<Graph> Graphs { get; set; }
     }
 }

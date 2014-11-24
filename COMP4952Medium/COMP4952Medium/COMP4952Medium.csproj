@@ -192,6 +192,7 @@
     <Content Include="images\Titan-150_AP.png" />
     <Content Include="images\Titan-150_HE.png" />
     <Content Include="images\Titan-150_HEAT.png" />
+    <Content Include="Scripts\SiteScript.js" />
     <Content Include="widget\css\rcarousel.css" />
     <Content Include="widget\img\loader.gif" />
     <Content Include="widget\lib\jquery-1.7.1.js" />
@@ -433,6 +434,7 @@
     </Compile>
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Graph.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ItemContext.cs" />
     <Compile Include="Models\ItemDatabaseInitializer.cs" />

@@ -152,3 +152,4 @@ C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medi
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.dll
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.pdb
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.csprojResolveAssemblyReference.cache
+C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\COMP4952Medium.dll.config
