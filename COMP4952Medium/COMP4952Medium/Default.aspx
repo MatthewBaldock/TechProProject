@@ -6,12 +6,13 @@
     <script src="Scripts/external/jquery/jquery.js"></script>
     <script src="Scripts/jquery-ui.js"></script>
     <script src="Scripts/jquery-ui.min.js"></script>
+
     <script type="text/javascript" src="widget/lib/jquery.ui.rcarousel.js"></script>
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link type="text/css" rel="stylesheet" href="widget/css/rcarousel.css" />
     <style>
        .draggable { width: 30px; height: 30px;  }
-       #containment-wrapper { width: 530px; height:530px;  }
+       #containment-wrapper { width: 665px; height:530px;  }
        #lineCanvas {border:1px solid ; }
 
     </style>
@@ -45,7 +46,7 @@
           opacity: 1;
         }
     </style>     
-    <div class="maincontainer">
+    <div class="maincontainer" onload="mydraw()">
         <div id="objectList">
             <div class="bs-example bs-example-tabs">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
@@ -73,7 +74,7 @@
                                     DataKeyNames="ItemID" GroupItemCount="1"
                                     ItemType="COMP4952Medium.Models.Item" SelectMethod="GetItems">
                                     <ItemTemplate>
-                                        <div class="object-img-size imgWrap" onclick="set_velocity(<%#: Item.ItemVelocity %>)"><img class="object-img-size" src="/images/<%#:Item.ItemImage %>" alt="<%#:Item.ItemName %>" /><p class="imgDescription"><%#:Item.ItemName %></p></div>
+                                        <div class="object-img-size imgWrap" onclick="set_velocity(<%#: Item.ItemVelocity %>);set_photo(<%#: Item.CategoryID %>)"><img  class="object-img-size" src="/images/<%#:Item.ItemImage %>" alt="<%#:Item.ItemName %>" /><p class="imgDescription"><%#:Item.ItemName %></p></div>
                                     </ItemTemplate>    
                                     </asp:ListView>
                                     <div class="object-img-size"></div>
@@ -89,13 +90,25 @@
         <div id="graphAndSettings">
             <div id="graph">
                 <div id="containment-wrapper">
-                    <canvas id="lineCanvas" height="500" width="500"></canvas>
+                    <canvas id="lineCanvas" height="500" width="650"></canvas>
                     <div style="background-color: #132930;"id="draggable" ondrag="mydraw()"class="draggable ui-widget-content">
-                        <img src="images/crosshair.png" height="30" width="30" />
+                        <img id="photo"src="images/crosshair.png" height="30" width="30" />
                     </div>
                 </div>
             </div>
             <div id="settings">
+                <p><input type="checkbox" onload="refresh()"onclick="refresh()" id="bestshot">Best shot 
+                    <asp:TextBox ID="range" onChange="test()" runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="rangeLabel" runat="server" Text="Label">Range</asp:Label>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="range" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
+                    <asp:TextBox ID="Height"  runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="heightLabel" runat="server" Text="Label">Height</asp:Label>
+                     <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Height" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
+                    <asp:TextBox ID="Angle" runat="server" Width="50" value="0"></asp:TextBox><asp:Label ID="angleLabel" runat="server" Text="Label">Angle</asp:Label>
+                     <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="Angle" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
+                   <input style="float:right;" type="button" value="Save Data"/>
+                    <input style="float:right;" type="button" value="Calculate"/> 
+                    
+                </p>
+                <div>X:<p id="divx"></p></div>
             </div>
         </div>
     </div>
@@ -175,22 +188,5 @@
             img.src = '/images/blue-down.png';
         }
     </script>
-    <script>
-        var height;
-        var c = document.getElementById("lineCanvas");
-        var ctx = c.getContext("2d");
-        $(function drawline() {
-            $("#draggable").draggable({ containment: "#containment-wrapper", scroll: false });
-        });
-        function mydraw() {
-            height = $("#draggable").position();
-            canvasHeight = $("#lineCanvas").position();
-            ctx.clearRect(0, 0, c.width, c.height);
-            ctx.beginPath();
-            ctx.moveTo(0, c.height);
-            ctx.lineTo((height.left - canvasHeight.left + 15), (height.top - canvasHeight.top + 15));
-            ctx.stroke();
-        }
-        $("#menu").menu();
-    </script>
+    <script type="text/javascript" src="Scripts/SiteScript.js"></script>
 </asp:Content>

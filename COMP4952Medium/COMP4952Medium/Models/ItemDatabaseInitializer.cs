@@ -12,8 +12,8 @@ namespace COMP4952Medium.Models
         {
             GetCategories().ForEach(c => context.Categories.Add(c));
             GetItems().ForEach(p => context.Items.Add(p));
+            
         }
-
         private static List<Category> GetCategories()
         {
             var categories = new List<Category>
@@ -206,9 +206,9 @@ namespace COMP4952Medium.Models
                 new Item
                 {
                     ItemID = 20,
-                    ItemName = "E540 Halbred",
+                    ItemName = "E540 Halberd",
                     ItemVelocity = 275,
-                    ItemImage = "E540_Halbred.png",
+                    ItemImage = "E540_Halberd.png",
                     CategoryID = 4
                 },
             };
