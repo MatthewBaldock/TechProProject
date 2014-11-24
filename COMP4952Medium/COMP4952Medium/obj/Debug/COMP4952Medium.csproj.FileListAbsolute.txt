@@ -50,57 +50,6 @@ c:\users\steven\documents\visual studio 2013\Projects\COMP4952Medium\COMP4952Med
 c:\users\steven\documents\visual studio 2013\Projects\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.csprojResolveAssemblyReference.cache
 c:\users\steven\documents\visual studio 2013\Projects\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.dll
 c:\users\steven\documents\visual studio 2013\Projects\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.pdb
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\COMP4952Medium.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\COMP4952Medium.pdb
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Antlr3.Runtime.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\AspNet.ScriptManager.bootstrap.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\EntityFramework.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\EntityFramework.SqlServer.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.FriendlyUrls.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.ScriptManager.MSAjax.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.ScriptManager.WebForms.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Newtonsoft.Json.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Owin.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\System.Web.Optimization.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\System.Web.Providers.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\WebGrease.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\System.Web.Optimization.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Antlr3.Runtime.pdb
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Newtonsoft.Json.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\EntityFramework.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\EntityFramework.SqlServer.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\System.Web.Providers.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.csprojResolveAssemblyReference.cache
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.dll
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.pdb
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\bin\COMP4952Medium.dll
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\bin\COMP4952Medium.pdb
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\bin\Antlr3.Runtime.dll
@@ -152,4 +101,3 @@ C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medi
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.dll
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.pdb
 C:\Users\Steven\Desktop\BCIT COMP4\COMP 4956\Project\TechProProject\COMP4952Medium\COMP4952Medium\obj\Debug\COMP4952Medium.csprojResolveAssemblyReference.cache
-C:\Users\Matthew\Documents\Assignments and Labs Term 4\4952-Tech Pro 2\Team project\TechProProject\COMP4952Medium\COMP4952Medium\bin\COMP4952Medium.dll.config

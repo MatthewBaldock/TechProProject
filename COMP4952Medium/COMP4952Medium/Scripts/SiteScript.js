@@ -7,6 +7,7 @@
 		var rangeValue;
 		var heightValue;
 		var velocity = 0;
+		var ID;
  $(function drawline() { 
     $( "#draggable" ).draggable({ containment: "#containment-wrapper", scroll: true });
            });
@@ -119,14 +120,21 @@
 		  ctx3.lineTo(c.width,c.height);
 		  ctx3.fillText(c.width*25,c.width-5,c.height - 10);
 		  ctx3.stroke();
-		  document.getElementById("Velocity").value = velocity*5;
 		
 		  rangeValue.value = get_x()*25;
-		  heightValue.value = get_y()*25 +175 ;
+		  heightValue.value = get_y() * 25 + 175;
+		  velocity_set(ID);
           
    }
-		  
+   function getVelocity()
+   {
+       return velocity;
+   }
+   function velocity_set(id) {
 
+       ID = id;
+       ID.value = getVelocity() * 5;
+   }
   
    function set_calculation(range, height) {
        rangeValue = range;

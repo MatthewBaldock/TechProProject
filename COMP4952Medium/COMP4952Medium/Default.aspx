@@ -104,7 +104,7 @@
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="range" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
                     <asp:TextBox ID="Height"  runat="server" Width="50" ></asp:TextBox><asp:Label ID="heightLabel" runat="server" Text="Label">Height</asp:Label>
                      <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Height" sage="RegularExpressionValidator" ValidationExpression="^[0-9]*$" ErrorMessage="Must be a number" ForeColor="Red"></asp:RegularExpressionValidator>
-                    Velocity<asp:TextBox ID="Velocity1" runat="server"> <p id="Velocity" ></p></asp:TextBox>
+                    Velocity<asp:TextBox ID="Velocity1" runat="server" Width="50" readonly ="true"></asp:TextBox>
                     <br />
                     <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="range" ErrorMessage="Range between 0 and 16250" ForeColor="Red" MaximumValue="16250" MinimumValue="0" Type="Integer"></asp:RangeValidator>
                      <asp:RangeValidator  ID="RangeValidator2" runat="server" ControlToValidate="Height" ErrorMessage="Height between 0 and 12500" ForeColor="Red" MaximumValue="12500" MinimumValue="0" Type="Integer"></asp:RangeValidator>
@@ -190,19 +190,18 @@
             img.src = '/images/blue-down.png';
         }  
     </script>
-<<<<<<< HEAD
        <script type="text/javascript" src="Scripts/SiteScript.js">
        </script>
       <script>
+          velocity_set(document.getElementById('<%=Velocity1.ClientID%>'));
           set_calculation(document.getElementById('<%=range.ClientID%>'), document.getElementById('<%=Height.ClientID%>'));
           function calculate() {
               set_calculation(document.getElementById('<%=range.ClientID%>'), document.getElementById('<%=Height.ClientID%>'));
           }
       </script>
-=======
+
     <script type="text/javascript" src="Scripts/SiteScript.js"></script>
     <script>
         test(document.getElementById('<%=range.ClientID%>').value);
     </script>
->>>>>>> a2e8768adfdd49c6739269cfd3c5d4fc679124b2
 </asp:Content>

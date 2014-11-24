@@ -99,7 +99,6 @@ namespace COMP4952Medium
               Height = Height.Text
              
           };
-           
        }
 
      
