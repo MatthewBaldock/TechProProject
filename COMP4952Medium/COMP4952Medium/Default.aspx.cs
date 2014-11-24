@@ -18,7 +18,7 @@ namespace COMP4952Medium
         private bool loadOnce = true;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         public string GetActive() 

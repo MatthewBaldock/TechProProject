@@ -34,6 +34,12 @@
 		    document.getElementById("photo").src = "images/crosshair.png";
 		}
 	}
+
+	function test(value) {
+	    var x = value;
+	    document.getElementById("divx").innerHTML = x;
+	}
+
 	function refresh()
 	{
 		mydraw();
@@ -120,6 +126,7 @@
           
    }
 		  
+
   
    function set_calculation(range, height) {
        rangeValue = range;
@@ -134,6 +141,7 @@
        document.getElementById("draggable").style.left = x+'px';
        document.getElementById("draggable").style.top = y+'px';
        refresh();
+
    }
 	function best_time()
 	{
